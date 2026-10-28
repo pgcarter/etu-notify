@@ -1,0 +1,1833 @@
+{
+  "tldrawFileFormatVersion": 1,
+  "schema": {
+    "schemaVersion": 2,
+    "sequences": {
+      "com.tldraw.store": 5,
+      "com.tldraw.asset": 1,
+      "com.tldraw.camera": 1,
+      "com.tldraw.document": 2,
+      "com.tldraw.instance": 26,
+      "com.tldraw.instance_page_state": 5,
+      "com.tldraw.page": 1,
+      "com.tldraw.instance_presence": 6,
+      "com.tldraw.pointer": 1,
+      "com.tldraw.shape": 4,
+      "com.tldraw.user": 1,
+      "com.tldraw.asset.image": 6,
+      "com.tldraw.asset.video": 5,
+      "com.tldraw.asset.bookmark": 2,
+      "com.tldraw.shape.arrow": 8,
+      "com.tldraw.shape.bookmark": 2,
+      "com.tldraw.shape.draw": 5,
+      "com.tldraw.shape.embed": 4,
+      "com.tldraw.shape.frame": 1,
+      "com.tldraw.shape.geo": 12,
+      "com.tldraw.shape.group": 0,
+      "com.tldraw.shape.highlight": 4,
+      "com.tldraw.shape.image": 5,
+      "com.tldraw.shape.line": 5,
+      "com.tldraw.shape.note": 13,
+      "com.tldraw.shape.text": 4,
+      "com.tldraw.shape.video": 4,
+      "com.tldraw.binding.arrow": 1
+    }
+  },
+  "records": [
+    {
+      "id": "document:document",
+      "typeName": "document",
+      "gridSize": 10,
+      "name": "",
+      "meta": {}
+    },
+    {
+      "id": "page:page",
+      "typeName": "page",
+      "name": "Page 1",
+      "index": "a1",
+      "meta": {}
+    },
+    {
+      "id": "shape:text1",
+      "typeName": "shape",
+      "type": "text",
+      "x": 0,
+      "y": -130,
+      "rotation": 0,
+      "index": "a1zPo",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "color": "black",
+        "size": "l",
+        "font": "sans",
+        "textAlign": "start",
+        "w": 1300,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Completion sync: delivery slices"
+                }
+              ]
+            }
+          ]
+        },
+        "scale": 1,
+        "autoSize": false
+      }
+    },
+    {
+      "id": "shape:text2",
+      "typeName": "shape",
+      "type": "text",
+      "x": 0,
+      "y": -70,
+      "rotation": 0,
+      "index": "a2Exb",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "color": "grey",
+        "size": "s",
+        "font": "sans",
+        "textAlign": "start",
+        "w": 1300,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Each slice is end to end, builds on the one before, and ends in an automated test. Slices 1–5 run against the in-memory fake HR platform; the contract suite runs from slice 1."
+                }
+              ]
+            }
+          ]
+        },
+        "scale": 1,
+        "autoSize": false
+      }
+    },
+    {
+      "id": "shape:geo3",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 0,
+      "y": 0,
+      "rotation": 0,
+      "index": "a3zja",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 230,
+        "h": 190,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "blue",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "1. Happy path from an event"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "our event format → ledger"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "→ worker → port → Delivered"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "same event twice = 1 record"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Blocked on: nothing"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo4",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 270,
+      "y": 0,
+      "rotation": 0,
+      "index": "a4qgb",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 230,
+        "h": 190,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "blue",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "2. Failure handling"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "retry_later · needs_action"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "expired lease ⇒ outcome unknown"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Skipped · re-queue"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Blocked on: nothing"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo5",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 540,
+      "y": 0,
+      "rotation": 0,
+      "index": "a5FJ6",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 230,
+        "h": 190,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "blue",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "3. Send rate"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "token bucket ~80/min"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "429 pauses the connection"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Blocked on: nothing"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo6",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 810,
+      "y": 0,
+      "rotation": 0,
+      "index": "a6H76",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 230,
+        "h": 190,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "orange",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "4. Sweep + real legacy event"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "watermark − 1h overlap"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "sweep-catch metric"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Blocked on: A1 · A2 · A3"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo7",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 1080,
+      "y": 0,
+      "rotation": 0,
+      "index": "a71gf",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 230,
+        "h": 190,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "green",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "5. Tokens"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "TokenProvider · single-flight"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "fenced write · keepalive"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Blocked on: soft A6 · A7 · A10"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo8",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 1080,
+      "y": 320,
+      "rotation": 0,
+      "index": "a8inv",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 230,
+        "h": 190,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "green",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "6. Real HTTP adapter"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "HTTP → delivery outcomes"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "look-up-before-create"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "contract suite vs sandbox"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Blocked on: A12 · A13 · A5"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo9",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 810,
+      "y": 320,
+      "rotation": 0,
+      "index": "a9L2n",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 230,
+        "h": 190,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "violet",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "7. Backfill"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "sweep from the beginning"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "preview → approve"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "live before backfill"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Blocked on: A9"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo10",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 540,
+      "y": 320,
+      "rotation": 0,
+      "index": "aAzqR",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 230,
+        "h": 190,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "violet",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "8. CS view + alerts"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "per-learner sync status"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "plain-English reasons · re-queue"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "oldest pending age · token health"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Blocked on: A11"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo11",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 270,
+      "y": 345,
+      "rotation": 0,
+      "index": "aBzbB",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "star",
+        "dash": "solid",
+        "url": "",
+        "w": 230,
+        "h": 140,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "red",
+        "fill": "solid",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "First customer live"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "week 6"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo12",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 0,
+      "y": 320,
+      "rotation": 0,
+      "index": "aCdaz",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 230,
+        "h": 190,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "yellow",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "9. Several connections"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "fair turn-taking"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "load test 8k/h · chaos sim"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Blocked on: nothing"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo13",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 0,
+      "y": 620,
+      "rotation": 0,
+      "index": "aDHPb",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "ellipse",
+        "dash": "solid",
+        "url": "",
+        "w": 230,
+        "h": 120,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "red",
+        "fill": "solid",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Compliance season"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "week 10"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "backfills finished"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:arrow14",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 115,
+      "y": 95,
+      "rotation": 0,
+      "index": "aE9ZI",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 270,
+          "y": 0
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow14-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow14",
+      "toId": "shape:geo3",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow14-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow14",
+      "toId": "shape:geo4",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow15",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 385,
+      "y": 95,
+      "rotation": 0,
+      "index": "aFqyj",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 270,
+          "y": 0
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow15-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow15",
+      "toId": "shape:geo4",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow15-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow15",
+      "toId": "shape:geo5",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow16",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 655,
+      "y": 95,
+      "rotation": 0,
+      "index": "aGpSI",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 270,
+          "y": 0
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow16-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow16",
+      "toId": "shape:geo5",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow16-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow16",
+      "toId": "shape:geo6",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow17",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 925,
+      "y": 95,
+      "rotation": 0,
+      "index": "aH6bj",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 270,
+          "y": 0
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow17-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow17",
+      "toId": "shape:geo6",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow17-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow17",
+      "toId": "shape:geo7",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow18",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 1195,
+      "y": 95,
+      "rotation": 0,
+      "index": "aIxza",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 320
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow18-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow18",
+      "toId": "shape:geo7",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow18-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow18",
+      "toId": "shape:geo8",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow19",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 1195,
+      "y": 415,
+      "rotation": 0,
+      "index": "aJIWA",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -270,
+          "y": 0
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow19-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow19",
+      "toId": "shape:geo8",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow19-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow19",
+      "toId": "shape:geo9",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow20",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 925,
+      "y": 415,
+      "rotation": 0,
+      "index": "aKoz9",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -270,
+          "y": 0
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow20-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow20",
+      "toId": "shape:geo9",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow20-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow20",
+      "toId": "shape:geo10",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow21",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 655,
+      "y": 415,
+      "rotation": 0,
+      "index": "aLzl7",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -270,
+          "y": 0
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow21-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow21",
+      "toId": "shape:geo10",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow21-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow21",
+      "toId": "shape:geo11",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow22",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 385,
+      "y": 415,
+      "rotation": 0,
+      "index": "aMNIX",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -270,
+          "y": 0
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow22-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow22",
+      "toId": "shape:geo11",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow22-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow22",
+      "toId": "shape:geo12",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow23",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 115,
+      "y": 415,
+      "rotation": 0,
+      "index": "aN7EA",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 265
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow23-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow23",
+      "toId": "shape:geo12",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow23-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow23",
+      "toId": "shape:geo13",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:geo24",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 540,
+      "y": 620,
+      "rotation": 0,
+      "index": "aOxDM",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "dashed",
+        "url": "",
+        "w": 770,
+        "h": 120,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "grey",
+        "fill": "none",
+        "size": "s",
+        "font": "sans",
+        "align": "start",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Day one, alongside slice 1:"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "• A1–A3 → legacy team (list completions since T, stable ID, event delivery)"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "• A12/A13 → HR vendor (sandbox, API docs). Still unanswered at end of week 2 ⇒ top risk"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:text25",
+      "typeName": "shape",
+      "type": "text",
+      "x": 0,
+      "y": 790,
+      "rotation": 0,
+      "index": "aPLoz",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "color": "grey",
+        "size": "s",
+        "font": "sans",
+        "textAlign": "start",
+        "w": 1300,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Colour: blue = core (fake only) · orange = legacy-facing · green = vendor-facing · violet = customer-facing · yellow = scale. Assumption IDs refer to DESIGN-QUESTIONS.md; detail in docs/delivery-slices.md."
+                }
+              ]
+            }
+          ]
+        },
+        "scale": 1,
+        "autoSize": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,1253 @@
+{
+  "tldrawFileFormatVersion": 1,
+  "schema": {
+    "schemaVersion": 2,
+    "sequences": {
+      "com.tldraw.store": 5,
+      "com.tldraw.asset": 1,
+      "com.tldraw.camera": 1,
+      "com.tldraw.document": 2,
+      "com.tldraw.instance": 26,
+      "com.tldraw.instance_page_state": 5,
+      "com.tldraw.page": 1,
+      "com.tldraw.instance_presence": 6,
+      "com.tldraw.pointer": 1,
+      "com.tldraw.shape": 4,
+      "com.tldraw.user": 1,
+      "com.tldraw.asset.image": 6,
+      "com.tldraw.asset.video": 5,
+      "com.tldraw.asset.bookmark": 2,
+      "com.tldraw.shape.arrow": 8,
+      "com.tldraw.shape.bookmark": 2,
+      "com.tldraw.shape.draw": 5,
+      "com.tldraw.shape.embed": 4,
+      "com.tldraw.shape.frame": 1,
+      "com.tldraw.shape.geo": 12,
+      "com.tldraw.shape.group": 0,
+      "com.tldraw.shape.highlight": 4,
+      "com.tldraw.shape.image": 5,
+      "com.tldraw.shape.line": 5,
+      "com.tldraw.shape.note": 13,
+      "com.tldraw.shape.text": 4,
+      "com.tldraw.shape.video": 4,
+      "com.tldraw.binding.arrow": 1
+    }
+  },
+  "records": [
+    {
+      "id": "document:document",
+      "typeName": "document",
+      "gridSize": 10,
+      "name": "",
+      "meta": {}
+    },
+    {
+      "id": "page:page",
+      "typeName": "page",
+      "name": "Page 1",
+      "index": "a1",
+      "meta": {}
+    },
+    {
+      "id": "shape:text1",
+      "typeName": "shape",
+      "type": "text",
+      "x": 0,
+      "y": -120,
+      "rotation": 0,
+      "index": "a1FtU",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "color": "black",
+        "size": "l",
+        "font": "sans",
+        "textAlign": "start",
+        "w": 900,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Completion sync: status lifecycle"
+                }
+              ]
+            }
+          ]
+        },
+        "scale": 1,
+        "autoSize": false
+      }
+    },
+    {
+      "id": "shape:geo2",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 330,
+      "y": -20,
+      "rotation": 0,
+      "index": "a2BQr",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "ellipse",
+        "dash": "solid",
+        "url": "",
+        "w": 260,
+        "h": 80,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "grey",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Recorded"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "(event · sweep · backfill)"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo3",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 310,
+      "y": 160,
+      "rotation": 0,
+      "index": "a3BHj",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 300,
+        "h": 120,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "blue",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "PENDING"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "next_attempt_at · attempts"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "priority: live | backfill"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo4",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 310,
+      "y": 420,
+      "rotation": 0,
+      "index": "a4n2A",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 300,
+        "h": 130,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "yellow",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "SENDING"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "lease_until · lease_owner"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "(claimed in a short txn,"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "never held across HTTP)"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo5",
+      "typeName": "shape",
+      "type": "geo",
+      "x": -40,
+      "y": 720,
+      "rotation": 0,
+      "index": "a5Jz5",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 260,
+        "h": 100,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "green",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "DELIVERED"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "remote record ID saved"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "(terminal)"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo6",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 330,
+      "y": 720,
+      "rotation": 0,
+      "index": "a6QFE",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 260,
+        "h": 100,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "grey",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "SKIPPED + reason"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "sync_disabled · mapping_removed"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "(no longer syncable)"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo7",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 700,
+      "y": 720,
+      "rotation": 0,
+      "index": "a7zs1",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 320,
+        "h": 150,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "red",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "NEEDS ACTION + reason"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "employee_not_found · learner_unlinked"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "rejected (4xx) · auth_revoked"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "retries_exhausted (~24h)"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:arrow8",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 460,
+      "y": 20,
+      "rotation": 0,
+      "index": "a8e3b",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 200
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "idempotent upsert"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow8-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow8",
+      "toId": "shape:geo2",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow8-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow8",
+      "toId": "shape:geo3",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow9",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 490,
+      "y": 280,
+      "rotation": 0,
+      "index": "a9Kar",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 140
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "claimed: lease + attempts++"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow9-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow9",
+      "toId": "shape:geo3",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.6,
+          "y": 1
+        },
+        "isExact": false,
+        "isPrecise": true,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow9-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow9",
+      "toId": "shape:geo4",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.6,
+          "y": 0
+        },
+        "isExact": false,
+        "isPrecise": true,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow10",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 310,
+      "y": 472,
+      "rotation": 0,
+      "index": "aARtX",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "orange",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": -240
+        },
+        "bend": -60,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "429 / 5xx / timeout"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "→ backoff (outcome unknown)"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow10-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow10",
+      "toId": "shape:geo4",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0,
+          "y": 0.4
+        },
+        "isExact": false,
+        "isPrecise": true,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow10-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow10",
+      "toId": "shape:geo3",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0,
+          "y": 0.6
+        },
+        "isExact": false,
+        "isPrecise": true,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow11",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 400,
+      "y": 420,
+      "rotation": 0,
+      "index": "aB4Rz",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "orange",
+        "fill": "none",
+        "dash": "dashed",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": -140
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "lease expired"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "(worker crashed)"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow11-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow11",
+      "toId": "shape:geo4",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.3,
+          "y": 0
+        },
+        "isExact": false,
+        "isPrecise": true,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow11-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow11",
+      "toId": "shape:geo3",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.3,
+          "y": 1
+        },
+        "isExact": false,
+        "isPrecise": true,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow12",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 460,
+      "y": 485,
+      "rotation": 0,
+      "index": "aC3KX",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "green",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -370,
+          "y": 285
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "2xx"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow12-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow12",
+      "toId": "shape:geo4",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow12-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow12",
+      "toId": "shape:geo5",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow13",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 460,
+      "y": 485,
+      "rotation": 0,
+      "index": "aDv8n",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 285
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "send-time check fails"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow13-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow13",
+      "toId": "shape:geo4",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow13-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow13",
+      "toId": "shape:geo6",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow14",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 460,
+      "y": 485,
+      "rotation": 0,
+      "index": "aEaTM",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "red",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 400,
+          "y": 310
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "needs a person"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow14-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow14",
+      "toId": "shape:geo4",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow14-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow14",
+      "toId": "shape:geo7",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow15",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 956,
+      "y": 720,
+      "rotation": 0,
+      "index": "aFNlQ",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "violet",
+        "fill": "none",
+        "dash": "dashed",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -346,
+          "y": -500
+        },
+        "bend": 80,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "re-queued"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "(CS action, or auto on reconnect)"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow15-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow15",
+      "toId": "shape:geo7",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.8,
+          "y": 0
+        },
+        "isExact": false,
+        "isPrecise": true,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow15-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow15",
+      "toId": "shape:geo3",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 1,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": true,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:text16",
+      "typeName": "shape",
+      "type": "text",
+      "x": -40,
+      "y": 920,
+      "rotation": 0,
+      "index": "aGZxj",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "color": "grey",
+        "size": "s",
+        "font": "sans",
+        "textAlign": "start",
+        "w": 1060,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "• \"Retrying\" is not a status: it is PENDING with attempts > 0 (CS sees \"waiting to retry, attempt 4, next at 14:20\")."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "• Unknown outcome (timeout, 5xx, expired SENDING lease) ⇒ next attempt looks up before creating (ADR 0004). A fresh PENDING row creates directly."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "• Outcome writes are fenced on lease_owner, but a returned remote record ID is always saved."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "• 429 also sets paused_until = now + Retry-After on the whole connection."
+                }
+              ]
+            }
+          ]
+        },
+        "scale": 1,
+        "autoSize": false
+      }
+    }
+  ]
+}

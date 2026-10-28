@@ -1,0 +1,1824 @@
+{
+  "tldrawFileFormatVersion": 1,
+  "schema": {
+    "schemaVersion": 2,
+    "sequences": {
+      "com.tldraw.store": 5,
+      "com.tldraw.asset": 1,
+      "com.tldraw.camera": 1,
+      "com.tldraw.document": 2,
+      "com.tldraw.instance": 26,
+      "com.tldraw.instance_page_state": 5,
+      "com.tldraw.page": 1,
+      "com.tldraw.instance_presence": 6,
+      "com.tldraw.pointer": 1,
+      "com.tldraw.shape": 4,
+      "com.tldraw.user": 1,
+      "com.tldraw.asset.image": 6,
+      "com.tldraw.asset.video": 5,
+      "com.tldraw.asset.bookmark": 2,
+      "com.tldraw.shape.arrow": 8,
+      "com.tldraw.shape.bookmark": 2,
+      "com.tldraw.shape.draw": 5,
+      "com.tldraw.shape.embed": 4,
+      "com.tldraw.shape.frame": 1,
+      "com.tldraw.shape.geo": 12,
+      "com.tldraw.shape.group": 0,
+      "com.tldraw.shape.highlight": 4,
+      "com.tldraw.shape.image": 5,
+      "com.tldraw.shape.line": 5,
+      "com.tldraw.shape.note": 13,
+      "com.tldraw.shape.text": 4,
+      "com.tldraw.shape.video": 4,
+      "com.tldraw.binding.arrow": 1
+    }
+  },
+  "records": [
+    {
+      "id": "document:document",
+      "typeName": "document",
+      "gridSize": 10,
+      "name": "",
+      "meta": {}
+    },
+    {
+      "id": "page:page",
+      "typeName": "page",
+      "name": "Page 1",
+      "index": "a1",
+      "meta": {}
+    },
+    {
+      "id": "shape:text1",
+      "typeName": "shape",
+      "type": "text",
+      "x": 0,
+      "y": -110,
+      "rotation": 0,
+      "index": "a1ssf",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "color": "black",
+        "size": "l",
+        "font": "sans",
+        "textAlign": "start",
+        "w": 1200,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Completion sync: high-level components"
+                }
+              ]
+            }
+          ]
+        },
+        "scale": 1,
+        "autoSize": false
+      }
+    },
+    {
+      "id": "shape:frame2",
+      "typeName": "shape",
+      "type": "frame",
+      "x": 0,
+      "y": 0,
+      "rotation": 0,
+      "index": "a2WAr",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "w": 300,
+        "h": 420,
+        "name": "Legacy learning platform (ColdFusion) — not changed",
+        "color": "black"
+      }
+    },
+    {
+      "id": "shape:geo3",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 25,
+      "y": 40,
+      "rotation": 0,
+      "index": "a3eHv",
+      "parentId": "shape:frame2",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 250,
+        "h": 90,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "grey",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Completion event"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "fire-and-forget (a hint)"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo4",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 25,
+      "y": 170,
+      "rotation": 0,
+      "index": "a4XSj",
+      "parentId": "shape:frame2",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 250,
+        "h": 100,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "grey",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Internal API"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "list completions since T"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "(A1, to confirm)"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo5",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 25,
+      "y": 310,
+      "rotation": 0,
+      "index": "a5GFj",
+      "parentId": "shape:frame2",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "dashed",
+        "url": "",
+        "w": 250,
+        "h": 80,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "grey",
+        "fill": "none",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "MySQL · MongoDB"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "(never read directly)"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:frame6",
+      "typeName": "shape",
+      "type": "frame",
+      "x": 400,
+      "y": 0,
+      "rotation": 0,
+      "index": "a6MN6",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "w": 820,
+        "h": 740,
+        "name": "Integration service (monorepo, ECS containers)",
+        "color": "black"
+      }
+    },
+    {
+      "id": "shape:geo7",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 30,
+      "y": 40,
+      "rotation": 0,
+      "index": "a7FBU",
+      "parentId": "shape:frame6",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 240,
+        "h": 90,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "light-blue",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Event ingest"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "(fast path)"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo8",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 30,
+      "y": 170,
+      "rotation": 0,
+      "index": "a8Ddf",
+      "parentId": "shape:frame6",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 240,
+        "h": 140,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "blue",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Reconciliation sweep"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "every 15 min, watermark − overlap"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "backfill = watermark 0"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "+ backfill preview"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo9",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 340,
+      "y": 120,
+      "rotation": 0,
+      "index": "a9PtA",
+      "parentId": "shape:frame6",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 260,
+        "h": 170,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "violet",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "COMPLETION LEDGER"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "= the work queue"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "status · reason · attempts"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "lease · priority · remote ID"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "(existing data store)"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo10",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 630,
+      "y": 120,
+      "rotation": 0,
+      "index": "aA95z",
+      "parentId": "shape:frame6",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "dashed",
+        "url": "",
+        "w": 170,
+        "h": 170,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "grey",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Already built"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "connections"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "learners + employee IDs"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "course mappings"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo11",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 340,
+      "y": 360,
+      "rotation": 0,
+      "index": "aBqHM",
+      "parentId": "shape:frame6",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 260,
+        "h": 140,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "yellow",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Delivery workers"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "round-robin per connection"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "token bucket ~80 rpm"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "live before backfill"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "429 ⇒ pause connection"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo12",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 300,
+      "y": 560,
+      "rotation": 0,
+      "index": "aCXcf",
+      "parentId": "shape:frame6",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 340,
+        "h": 160,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "light-green",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "HR platform adapter (port)"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "deliver(connection, completion,"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "  { previousOutcomeUnknown })"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "→ delivered | retry_later | needs_action"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "HTTP + look-up-before-create inside"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "(ADR 0001, 0004)"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:frame13",
+      "typeName": "shape",
+      "type": "frame",
+      "x": 1320,
+      "y": 360,
+      "rotation": 0,
+      "index": "aDwcI",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "w": 300,
+        "h": 180,
+        "name": "HR platform (third party)",
+        "color": "black"
+      }
+    },
+    {
+      "id": "shape:geo14",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 25,
+      "y": 40,
+      "rotation": 0,
+      "index": "aEFcn",
+      "parentId": "shape:frame13",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 250,
+        "h": 120,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "green",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Certification records API"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "100 req/min per connection"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "429 + Retry-After · 5xx"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo15",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 1320,
+      "y": 60,
+      "rotation": 0,
+      "index": "aFzwL",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 300,
+        "h": 110,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "light-violet",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Customer success view"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "per-learner sync history"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "plain-English reasons · re-queue"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:geo16",
+      "typeName": "shape",
+      "type": "geo",
+      "x": 1320,
+      "y": 200,
+      "rotation": 0,
+      "index": "aGy4A",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "geo": "rectangle",
+        "dash": "solid",
+        "url": "",
+        "w": 300,
+        "h": 120,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "light-red",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Alerts"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "oldest pending age · needs_action"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "sweep catches · sweep freshness"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shape:arrow17",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 150,
+      "y": 85,
+      "rotation": 0,
+      "index": "aHsir",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "dashed",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 400,
+          "y": 0
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "may be lost"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow17-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow17",
+      "toId": "shape:geo3",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow17-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow17",
+      "toId": "shape:geo7",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow18",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 550,
+      "y": 240,
+      "rotation": 0,
+      "index": "aIWRM",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -400,
+          "y": -20
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "list since watermark"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow18-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow18",
+      "toId": "shape:geo8",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow18-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow18",
+      "toId": "shape:geo4",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow19",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 550,
+      "y": 85,
+      "rotation": 0,
+      "index": "aJ5ez",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 320,
+          "y": 120
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "upsert"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow19-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow19",
+      "toId": "shape:geo7",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow19-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow19",
+      "toId": "shape:geo9",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow20",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 550,
+      "y": 240,
+      "rotation": 0,
+      "index": "aKhub",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 320,
+          "y": -35
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "upsert"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow20-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow20",
+      "toId": "shape:geo8",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow20-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow20",
+      "toId": "shape:geo9",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow21",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 870,
+      "y": 430,
+      "rotation": 0,
+      "index": "aLXeE",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": -225
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "claim due rows"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow21-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow21",
+      "toId": "shape:geo11",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow21-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow21",
+      "toId": "shape:geo9",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow22",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 870,
+      "y": 430,
+      "rotation": 0,
+      "index": "aM8a2",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 210
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "send"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow22-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow22",
+      "toId": "shape:geo11",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow22-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow22",
+      "toId": "shape:geo12",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow23",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 870,
+      "y": 640,
+      "rotation": 0,
+      "index": "aNHgU",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 600,
+          "y": -180
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "HTTP"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow23-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow23",
+      "toId": "shape:geo12",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow23-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow23",
+      "toId": "shape:geo14",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow24",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 1470,
+      "y": 115,
+      "rotation": 0,
+      "index": "aOPAb",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -600,
+          "y": 90
+        },
+        "bend": 30,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "read · re-queue"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow24-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow24",
+      "toId": "shape:geo15",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow24-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow24",
+      "toId": "shape:geo9",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow25",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 870,
+      "y": 205,
+      "rotation": 0,
+      "index": "aPwm2",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 600,
+          "y": 55
+        },
+        "bend": -20,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "metrics"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow25-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow25",
+      "toId": "shape:geo9",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow25-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow25",
+      "toId": "shape:geo16",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "shape:arrow26",
+      "typeName": "shape",
+      "type": "arrow",
+      "x": 870,
+      "y": 430,
+      "rotation": 0,
+      "index": "aQxT6",
+      "parentId": "page:page",
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "black",
+        "fill": "none",
+        "dash": "dashed",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 245,
+          "y": -225
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "send-time"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "eligibility check"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      }
+    },
+    {
+      "id": "binding:arrow26-start",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow26",
+      "toId": "shape:geo11",
+      "meta": {},
+      "props": {
+        "terminal": "start",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    },
+    {
+      "id": "binding:arrow26-end",
+      "typeName": "binding",
+      "type": "arrow",
+      "fromId": "shape:arrow26",
+      "toId": "shape:geo10",
+      "meta": {},
+      "props": {
+        "terminal": "end",
+        "normalizedAnchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isExact": false,
+        "isPrecise": false,
+        "snap": "none"
+      }
+    }
+  ]
+}
