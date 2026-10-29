@@ -9,10 +9,12 @@ Things the design depends on that the brief doesn't settle. Each one says what w
 - **Ask:** Can it filter by customer and an updated-since time, and does it paginate? How heavily can we call it (it's a legacy ColdFusion service)?
 - **If wrong:** ask for that endpoint as the one change to the legacy platform, or sweep per learner (slow, and heavy on the legacy service), or fall back to a nightly export.
 
-### A2. Each completion has a stable, unique ID
-- **Why it matters:** this is the idempotency key in our ledger.
-- **Ask:** Is there a completion ID that never changes, or only (learner, course, timestamp)?
-- **If wrong:** derive a key from (customer, learner, course, completed-at). A re-completion on the same timestamp then can't be told apart, which is acceptable.
+### A2. A completion is identified by (legacy record ID, completed-at)
+- **Why it matters:** this is the idempotency key in our ledger. The brief doesn't say the legacy platform has a completion ID at all. If a re-completion (e.g. an annual refresher) updates the existing record in place, a key on the record ID alone would treat it as a duplicate and silently drop it.
+- **Decision:** key the ledger on (legacy record ID, completed-at). This catches re-completions whether the legacy platform writes a new record per attempt or overwrites one record per learner and course.
+- **Known limitation:** an admin correcting a completion date produces a new key, so a second certification record is sent. This is rare and visible to customer success, because both ledger rows share the record ID. If it proves a problem, treat a new date close to an existing delivered row for the same record as a correction (Needs action `date_changed`) rather than a re-completion.
+- **Ask:** Is a re-completion a new record, or an update to the existing one? Are completion dates ever edited after the fact? Is there a record ID at all, or only (learner, course, timestamp)?
+- **If wrong:** with no record ID, derive one from (customer, learner, course). The key is then (derived ID, completed-at), and nothing else changes.
 
 ### A3. We can receive the completion event in a form we control
 - **Why it matters:** decides the ingestion path.

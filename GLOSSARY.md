@@ -28,7 +28,7 @@ _Avoid_: Course link, certification mapping
 A course that has a course mapping for a given customer.
 
 **Completion**:
-One learner finishing one course on a given date, identified by a stable ID from the learning platform.
+One learner finishing one course on a given date, identified by the legacy record ID together with the completion date.
 _Avoid_: Result, attempt, event
 
 **Re-completion**:
