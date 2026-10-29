@@ -52,7 +52,7 @@ When a learner completes a mapped course, the HR platform must show it. The comp
 - alerts on unusual patterns (e.g. no completions for certain timeframe, high error counts )
 
 ## Testing
-- init tests
+- unit tests
 - integration tests (containerised DB)
 - Http Adapter
 - e2e from boundary of legacy system integration
